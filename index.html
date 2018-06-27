@@ -1,16 +1,16 @@
 <html>
   <head>
     <style>
-      html, body, iframe {
+      html, body, img {
         margin: 0;
         padding: 0;
         overflow: hidden;
       }
-      iframe {
+      img {
         width: 50%;
         height: 100%;
-        position: absolute;
-        top: 0;
+        float: left;
+        -webkit-user-select: none;
       }
     </style>
     <script>
@@ -18,7 +18,7 @@
     </script>
   </head>
   <body>
-    <iframe src="http://172.22.0.22:8080/video" style="left:0" seamless></iframe>
-    <iframe src="http://172.22.0.23:8080/video" style="right:0" seamless></iframe>
+    <img src="http://172.22.0.22:8080/video">
+    <img src="http://172.22.0.23:8080/video" style="transform: rotate(180deg);">
   </body>
 </html
