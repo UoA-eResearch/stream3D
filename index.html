@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <style>
+      html, body, iframe {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      iframe {
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+      }
+    </style>
+    <script>
+      screen.orientation.lock('landscape');
+    </script>
+  </head>
+  <body>
+    <iframe src="http://172.22.0.22:8080/video" style="left:0" seamless></iframe>
+    <iframe src="http://172.22.0.23:8080/video" style="right:0" seamless></iframe>
+  </body>
+</html
